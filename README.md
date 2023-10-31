@@ -47,6 +47,8 @@ while not my_wifi.is_connected:
 my_serveur = Serveur(wifi=my_wifi)
 ```
 
+![helloworld](_materials/helloworld.png)
+
 Ce second programme va générer une page HTML avec deux boutons de commande pour allumer et étteindre la LED de l'ESP32. 
 Cette fois-ci nous définissons le générateur de code HTML avec la fonction **def my_html_page()** et les actions en réponse de l'ESP32 sont définies dans la fonction **def my_exec_request(request)** qui sont toutes deux passées en paramètre lors de la création de la variable my_serveur = Serveur(wifi=my_wifi, gen_html=my_html_page, exec_esp32 = my_exec_request)
 
